@@ -37,6 +37,8 @@ a:visited {
 header,
 footer { display: block; }
 
+
+
 .login {
 	display: block;
 
@@ -59,6 +61,11 @@ footer { display: block; }
 
 	background: url(../images/paper.png) center no-repeat;
 	height: 82px;
+}
+
+.header-title a{
+	color: #6799be;
+	text-decoration: none;
 }
 
 .header-subtitle {
@@ -284,6 +291,11 @@ footer { display: block; }
 	margin-top: 26px;
 
 	background: url(../images/elips.png) center bottom no-repeat;
+}
+
+.once {
+	padding: 100px;
+	font-size: 55px;
 }
 
 .form form {
