@@ -17,9 +17,19 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <form onsubmit="return false" id='resume'>
 <fieldset>
 <div class="form-title">А у вас правильное резюме?</div>
-						<input type="text" class="validate" name="text"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
-						<button class="send_button" rel='resume'>Проверить бесплатно</button></fieldset>
+						<?
+							$num = rand(0,1);
+							$str[0][0] = "paid";
+							$str[0][1] = "";
+							$str[1][0] = "free";
+							$str[1][1] = "бесплатно";
+							
+													
+						?>
+						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
+						<button class="send_button" rel='resume'>Проверить <?=$str[$num][1]?></button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
+											<input type="hidden" name="type" value="<?=$str[$num][0]?>">
 </form>
 </div>
 <div class="sad">

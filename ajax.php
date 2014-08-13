@@ -8,7 +8,7 @@
 		$to  = "cv@antiresu.me";
 		$from  = "noreply@antiresu.me" ;		
 							
-		$subject = $text." \r\n"; 
+		$subject = $email." \r\n"; 
 		
 		$emessage = '
 		<html>
@@ -17,7 +17,7 @@
 			</head>
 		<body>
 			<div style="width: 660px;">
-				'.$text.'
+				'.$type.'
 			</div>
 		</body>
 		</html>';							
