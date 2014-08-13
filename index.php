@@ -14,12 +14,12 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div class="eyes"></div>
 </div>
 <div class="form">
-<form action="" method="post">
+<form onsubmit="return false" id='resume'>
 <fieldset>
 <div class="form-title">А у вас правильное резюме?</div>
-<input type="text" name="text" id="" placeholder="Ваш E-mail">
-<button type="submit">Проверить бесплатно</button>
-</fieldset>
+						<input type="text" class="validate" name="text"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
+						<button class="send_button" rel='resume'>Проверить бесплатно</button></fieldset>
+											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
 </form>
 </div>
 <div class="sad">
@@ -54,5 +54,12 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 </div>
 </footer>
 </div>
+	<div id="modal_success">
+		<div class="success">
+			<div class="form_title">Ваша заявка удачно отправлена!</div>	
+			<p>Наш эксперт свяжется с вами в ближайшее время.</p>
+			<button class="close_fancy">Ок</button>
+		</div>
+	</div>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
