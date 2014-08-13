@@ -27,7 +27,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 													
 						?>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
-						<button class="send_button" rel='resume'>Проверить <?=$str[$num][1]?></button></fieldset>
+						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Проверить <?=$str[$num][1]?></button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
 											<input type="hidden" name="type" value="<?=$str[$num][0]?>">
 </form>
