@@ -27,5 +27,6 @@
 		mail($to, $subject, $emessage, $headers);
 		
 		echo 'sended';
+		
 	}
 ?>
