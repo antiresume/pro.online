@@ -1,6 +1,11 @@
 <?
 	
 	if (isset($_GET['action']) && $_GET['action']=='send_form'){
+		
+		$form_name = "FORM NAME NO SET";
+		$email = "EMAIL NO SET";
+		$type = "TYPE NO SET";
+		
 		foreach ($_GET as $key => $val) {
 			${$key} = $val;
 		}
@@ -8,7 +13,7 @@
 		$to  = "cv@antiresu.me";
 		$from  = "noreply@antiresu.me" ;		
 							
-		$subject = $email; 
+		$subject = "Заявка \r\n"; 
 		
 		$emessage = '
 		<html>
@@ -17,7 +22,7 @@
 			</head>
 		<body>
 			<div style="width: 660px;">
-				'.$type.'
+				'.$email.'<br>'.$type.'
 			</div>
 		</body>
 		</html>';							
