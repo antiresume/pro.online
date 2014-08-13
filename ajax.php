@@ -6,7 +6,7 @@
 		}
 		
 		$to  = "cv@antiresu.me";
-		$from  = "cv@antiresu.me" ;		
+		$from  = "noreply@antiresu.me" ;		
 							
 		$subject = $form_name." \r\n"; 
 		
