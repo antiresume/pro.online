@@ -8,7 +8,7 @@
 		$to  = "cv@antiresu.me";
 		$from  = "noreply@antiresu.me" ;		
 							
-		$subject = $form_name." \r\n"; 
+		$subject = "Заявка \r\n"; 
 		
 		$emessage = '
 		<html>
