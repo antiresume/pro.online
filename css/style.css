@@ -80,6 +80,13 @@ footer { display: block; }
 	position: relative;
 }
 
+.text {
+	font-family: 'Lobster';
+	font-size: 26px;
+	font-weight: normal;
+	
+}
+
 .happy,
 .sad {
 	position: absolute;
