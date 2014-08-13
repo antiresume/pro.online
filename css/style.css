@@ -37,8 +37,6 @@ a:visited {
 header,
 footer { display: block; }
 
-
-
 .login {
 	display: block;
 
@@ -67,6 +65,7 @@ footer { display: block; }
 	color: #6799be;
 	text-decoration: none;
 }
+
 
 .header-subtitle {
 	margin-top: 14px;
@@ -298,6 +297,7 @@ footer { display: block; }
 	font-size: 55px;
 }
 
+
 .form form {
 	width: 326px;
 	height: 236px;
@@ -456,7 +456,6 @@ footer {
 
 	background-position: -489px 0;
 }
-
 /*
 .link1:hover {
 	width: 76px;
@@ -485,13 +484,13 @@ footer {
 	background-position: -345px -48px;
 }
 
+
 .link5:hover {
 	width: 155px;
 
 	background-position: -489px -48px;
 }
 */
-
 /* Clearfix */
 
 .clearfix {
@@ -1469,4 +1468,60 @@ footer {
 		overflow: hidden;
 	}
 }
+#modal_success{
+	position: relative;
+	display: none;
+	width: 350px;
+	padding: 20px;
+	font-size: 16px;
+	border-radius: 8px;
+	overflow: hidden;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
+	color: #6799be ;
+	text-align:center;
+}
+	#modal_success .form_title{
+		font-size: 25px;
+		margin-bottom: 0px;
+		 text-align:center;
+	}
+	.success{
+		position: relative;
+		padding: 10px 0px 10px 0px;
+	}
+	
+	
+	#modal_success button {
+	width: 306px;
+	height: 65px;
+	margin: 16px 0 6px 0;
+	padding: 15px 25px;
 
+	font-family: 'PT Sans Narrow', arial, sans-serif;
+	font-size: 25px;
+
+	border: none;
+	border-radius: 6px;
+
+	outline: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+#modal_success button {
+	font-weight: bold;
+	color: #7c5e16;
+	text-transform: uppercase;
+
+	background: #ffd800;
+
+	box-shadow: 0 1px 0 0 #ffe96e inset, 0 4px 0 0 #ffae00;
+	cursor: pointer;
+}
+
+#modal_success  button:hover {
+	background: #ffe000;
+}
