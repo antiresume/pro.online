@@ -18,16 +18,34 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <fieldset>
 <div class="form-title">А у вас правильное резюме?</div>
 						<?
-							$num = rand(0,1);
-							$str[0][0] = "paid";
-							$str[0][1] = "";
-							$str[1][0] = "free";
-							$str[1][1] = "бесплатно";
+							$num = rand(0,5);
+//							$str[0][0] = "paid";
+//							$str[0][1] = "";
+//							$str[1][0] = "free";
+//							$str[1][1] = "бесплатно";
+
+							$str[0][0] = "190";
+							$str[0][1] = "за 190 руб.";
+							
+							$str[1][0] = "290";
+							$str[1][1] = "за 290 руб.";
+							
+							$str[2][0] = "390";
+							$str[2][1] = "за 390 руб.";
+							
+							$str[3][0] = "490";
+							$str[3][1] = "за 490 руб.";
+							
+							$str[4][0] = "90";
+							$str[4][1] = "за 90 руб.";
+							
+							$str[5][0] = "free";
+							$str[5][1] = "бесплатно";
 							
 													
 						?>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
-						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Проверить <?=$str[$num][1]?></button></fieldset>
+						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Экспертиза <?=$str[$num][1]?></button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
 											<input type="hidden" name="type" value="<?=$str[$num][0]?>">
 </form>
@@ -62,7 +80,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div class="link5" href="http://career.ru" target="_blank"></div>
 </div>
 </div>
-<div class="copy"><br><br><br><br><a href="/privacy.php" class="copy">Соглашение об обработке персональной информации</a></div>
+<div class="copy"><br><br><br><br><a href="/.php" class="copy">Соглашение об обработке персональной информации</a></div>
 </footer>
 </div>
 	<div id="modal_success">
