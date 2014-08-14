@@ -87,6 +87,19 @@ footer { display: block; }
 	
 }
 
+.text_title {
+	
+}
+
+
+.text_content {
+	font-family: 'PT Sans Narrow', arial, sans-serif;;
+	font-size: 26px;
+	font-weight: normal;
+	
+	
+}
+
 .happy,
 .sad {
 	position: absolute;
@@ -300,9 +313,11 @@ footer { display: block; }
 }
 
 .once {
-	font-size: 55px;
-	padding: 40 100 100 210px;
+	font-size: 45px;
+	padding: 40 100 100 110px;
+	text-align: justify;
 }
+
 
 
 .form form {
@@ -514,6 +529,9 @@ footer {
 }
 
 /* -=Keyframes=- */
+
+
+
 
 /* Happy cup  */
 
@@ -1531,4 +1549,15 @@ footer {
 
 #modal_success  button:hover {
 	background: #ffe000;
+}
+
+.copy {
+	font-size: 15px;
+	text-align: right;
+	text-decoration: none;
+		
+}
+
+.copy a{
+	color: #CCC;
 }

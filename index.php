@@ -62,6 +62,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div class="link5" href="http://career.ru" target="_blank"></div>
 </div>
 </div>
+<div class="copy"><br><br><br><br><a href="/privacy.php" class="copy">Соглашение об обработке персональной информации</a></div>
 </footer>
 </div>
 	<div id="modal_success">
