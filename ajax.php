@@ -29,8 +29,37 @@
 		$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 		$headers .= "From: ".$from."\r\n";
 							
-		if(mail($to, $subject, $emessage, $headers)) echo 'sended';
+		if(mail($to, $subject, $emessage, $headers)) echo 'sended to CV <br>';
+			else echo "error <br>";
+		
+		
+		
+		
+		
+		
+		//send to CRM
+		$to  = "crm@antiresu.me";
+		$from  = $email ;		
+							
+		$subject_crm = "Заявка ".date("Y.m.d H:i:s")." ".$type."\r\n"; 
+		
+		$emessage_crm = '
+		<html>
+			<head>
+			<title>'.$form_name.'</title>
+			</head>
+		<body>
+			<div style="width: 660px;">
+				'.$email.'<br>'.$type.'
+			</div>
+		</body>
+		</html>';							
+		$headers  = "Content-type: text/html; charset=utf-8 \r\n";
+		$headers .= "From: ".$from."\r\n";
+		
+		if(mail($to, $subject, $emessage, $headers)) echo 'sended to CRM';
 			else echo "error";
+		
 		
 			}
 ?>
