@@ -64,14 +64,14 @@
 		$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 		$headers .= "From: ".$from."\r\n";
 		
-		if(mail($to, $subject, $emessage, $headers)) echo 'sended to CRM';
+		if(mail($to, $subject_crm, $emessage_crm, $headers)) echo 'sended to CRM';
 			else echo "error";
 	
 	
 		//send to Client
 
 				$to  = $email;
-				$from  =  "crm@antiresu.me";		
+				$from  =  "cv@antiresu.me";		
 
 				$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 				$headers .= "From: ".$from."\r\n";
@@ -79,9 +79,9 @@
 		if($type == "free") {
 		
 									
-				$subject_crm = "Правильное резюме (".date("Y.m.d").") \r\n"; 
+				$subject_cl = "Правильное резюме (".date("Y.m.d").") \r\n"; 
 				
-				$emessage_crm = '
+				$emessage_cl = '
 				<html>
 					<head>
 					<title>Правильное Резюме</title>
@@ -103,9 +103,9 @@
 				
 		
 			}else {
-				$subject_crm = "Заказ экспертизы от ".date("Y.m.d")." \r\n"; 
+				$subject_cl = "Заказ экспертизы от ".date("Y.m.d")." \r\n"; 
 				
-				$emessage_crm = '
+				$emessage_cl = '
 				<html>
 					<head>
 					<title>Заказ экспертизы</title>
@@ -130,7 +130,7 @@
 				
 			
 			}
-				if(mail($to, $subject, $emessage, $headers)) echo 'sended to client';
+				if(mail($to, $subject_cl, $emessage_cl, $headers)) echo 'sended to client';
 					else echo "error";
 
 
