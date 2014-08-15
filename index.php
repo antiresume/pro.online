@@ -18,12 +18,13 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <fieldset>
 <div class="form-title">А у вас правильное резюме?</div>
 						<?
-							$num = rand(0,5);
-//							$str[0][0] = "paid";
-//							$str[0][1] = "";
-//							$str[1][0] = "free";
-//							$str[1][1] = "бесплатно";
+							$num = rand(0,1);
+							$str[0][0] = "paid";
+							$str[0][1] = "";
+							$str[1][0] = "free";
+							$str[1][1] = "бесплатно";
 
+/*
 							$str[0][0] = "190";
 							$str[0][1] = "за 190 руб.";
 							
@@ -41,7 +42,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 							
 							$str[5][0] = "free";
 							$str[5][1] = "бесплатно";
-							
+*/							
 													
 						?>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>

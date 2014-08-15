@@ -76,7 +76,7 @@
 				$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 				$headers .= "From: ".$from."\r\n";
 
-		if($type == "free") {
+		//if($type == "free") {
 		
 									
 				$subject_cl = "Правильное резюме (".date("Y.m.d").") \r\n"; 
@@ -102,7 +102,7 @@
 				</html>';							
 				
 		
-			}else {
+		/*	}else {
 				$subject_cl = "Заказ экспертизы от ".date("Y.m.d")." \r\n"; 
 				
 				$emessage_cl = '
@@ -130,6 +130,7 @@
 				
 			
 			}
+		*/
 				if(mail($to, $subject_cl, $emessage_cl, $headers)) echo 'sended to client';
 					else echo "error";
 
