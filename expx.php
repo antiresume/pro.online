@@ -7,7 +7,6 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Оплата экспертизы резюме");
 
 
-$sum = 190;
+$sum = 990;
 include($_SERVER["DOCUMENT_ROOT"]."/exp_inc.php");
-
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
