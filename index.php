@@ -19,10 +19,10 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div class="form-title">А у вас правильное резюме?</div>
 						<?
 							$num = rand(0,1);
-							$str[0][0] = "paid";
-							$str[0][1] = "";
-							$str[1][0] = "free";
-							$str[1][1] = "бесплатно";
+							$str[0][0] = "Экспертиза";
+							$str[0][1] = "Экспертиза";
+							$str[1][0] = "Оценка";
+							$str[1][1] = "Оценка";
 
 /*
 							$str[0][0] = "190";
@@ -46,10 +46,11 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 													
 						?>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
-						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Экспертиза <?=$str[$num][1]?></button></fieldset>
+						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'> <?=$str[$num][1]?> бесплатно</button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
 											<input type="hidden" name="type" value="<?=$str[$num][0]?>">
 </form>
+
 </div>
 <div class="sad">
 <div class="eyes"></div>
@@ -87,7 +88,13 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 	<div id="modal_success">
 		<div class="success">
 			<div class="form_title">Ваша заявка удачно отправлена!</div>	
-			<p>Наш эксперт свяжется с вами в ближайшее время.</p>
+			<p>Мы отправили Вам письмо с дальнейшими инструкциями.<br>
+			<br>
+				Если его нет, то проверьте, пожалуйста, вкладку "Спам" или<br>
+				напишите письмо на email <a href="mailto:cv@antiresu.me">cv@antiresu.me</a> сами.<br>
+				<br>
+				Спасибо. Pады быть Вам полезными!
+			</p>
 			<button class="close_fancy">Ок</button>
 		</div>
 	</div>

@@ -1496,12 +1496,12 @@ footer {
 #modal_success{
 	position: relative;
 	display: none;
-	width: 350px;
+	width: 550px;
 	padding: 20px;
-	font-size: 16px;
+	font-size: 21px;
 	border-radius: 8px;
 	overflow: hidden;
-	text-shadow: 1px 1px 0px rgba(0,0,0,0.15);
+	/*text-shadow: 1px 1px 0px rgba(0,0,0,0.15);*/
 	color: #6799be ;
 	text-align:center;
 }
@@ -1510,6 +1510,11 @@ footer {
 		margin-bottom: 0px;
 		 text-align:center;
 	}
+	
+	#modal_success a{
+		color: #ff7d54 ;
+	}
+
 	.success{
 		position: relative;
 		padding: 10px 0px 10px 0px;
