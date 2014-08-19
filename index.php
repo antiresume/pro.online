@@ -6,7 +6,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <header>
 <a class="login" href="/bitrix/admin/">Войти</a>
 <div class="header-title">Правильное-резюме.онлайн</div>
-<div class="header-subtitle">Правильное резюме продает!</div>
+<div class="header-subtitle">Правильное резюме интересно работодателю!</div>
 </header>
 <div class="content clearfix">
 <div class="happy">
@@ -92,7 +92,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 			<p>Мы отправили Вам письмо с дальнейшими инструкциями.<br>
 			<br>
 				Если его нет, то проверьте, пожалуйста, вкладку "Спам" или<br>
-				напишите письмо на email <a href="mailto:cv@antiresu.me">cv@antiresu.me</a> сами.<br>
+				напишите письмо на email <a href="mailto:crm@antiresu.me">crm@antiresu.me</a> сами.<br>
 				<br>
 				Спасибо. Pады быть Вам полезными!
 			</p>
