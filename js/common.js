@@ -62,6 +62,11 @@ $(function(){
 	});
 	$('.close_fancy').click(function(){
 		$.fancybox.close();
+		document.getElementById('form1').style.display = 'none';
+		document.getElementById('form2').style.display = 'block';
+		document.getElementById('donate').style.display = 'none';
+		
+		
 	});
 	
 	

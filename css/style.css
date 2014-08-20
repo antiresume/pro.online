@@ -313,7 +313,7 @@ footer { display: block; }
 }
 
 .once {
-	font-size: 45px;
+	font-size: 35px;
 	padding: 40 100 100 110px;
 	text-align: justify;
 }
@@ -1565,4 +1565,9 @@ footer {
 
 .copy a{
 	color: #CCC;
+}
+
+.donate
+{
+	//background-color: #FFF;
 }
