@@ -54,9 +54,9 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 */							
 													
 						?>
-						<div class="form-title">ЭКСПРЕСС-ОБЗОР от 21 рубля.</div>
+						<div class="form-title">Консультация всего за 21 рубль</div>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
-						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'> Показать HR-эксперту</button></fieldset>
+						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'> Спросить у HR-эксперта</button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
 											<input type="hidden" name="type" value="<?=$str[$num][0]?>">
 </form>
