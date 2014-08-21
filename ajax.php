@@ -171,8 +171,8 @@
 			
 			}
 		*/
-			//	if(mail($to, $subject_cl, $emessage_cl, $headers)) echo 'sended to client';
-			//		else echo "error";
+				if(mail($to, $subject_cl, $emessage_cl, $headers)) echo 'sended to client';
+					else echo "error";
 
 
 	}
