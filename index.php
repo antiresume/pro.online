@@ -27,11 +27,16 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <fieldset>
 
 						<?
-							$num = rand(0,1);
-							$str[0][0] = "hour";
-							$str[0][1] = "ЧАС";
-							$str[1][0] = "day";
-							$str[1][1] = "СУТКИ";
+							$num = 1;//rand(0,2);
+							$str[0][0] = "21";
+							$str[0][1] = "21 рубль";
+							
+							$str[1][0] = "50";
+							$str[1][1] = "50 рублей";
+							
+							$str[2][0] = "90";
+							$str[2][1] = "90 рублей";
+							
 
 /*
 							$str[0][0] = "190";
@@ -54,7 +59,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 */							
 													
 						?>
-						<div class="form-title">Консультация всего за 21 рубль</div>
+						<div class="form-title">Консультация всего за <?=$str[$num][1]?></div>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
 						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'> Спросить у HR-эксперта</button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
@@ -95,7 +100,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div class="copy"><br><br><br><br><a href="/privacy.php" class="copy">Соглашение об обработке персональной информации</a></div>
 </footer>
 <div id="donate" class="donate">
-	<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&any-card-payment-type=on&button-text=06&button-size=l&button-color=white&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D0%B8&default-sum=21&fio=on&mail=on&phone=on" width="259" height="54"></iframe>
+	<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&any-card-payment-type=on&button-text=01&button-size=l&button-color=white&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D0%B8&default-sum=<?=$str[$num][0]?>&fio=on&mail=on&phone=on" width="259" height="54"></iframe>
 	
 </div>
 </div>
