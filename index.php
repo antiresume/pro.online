@@ -2,6 +2,22 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 ?>
+
+<?
+	$num = 1;//rand(0,2);
+	$str[0][0] = "21";
+	$str[0][1] = "21 рубль";
+	
+	$str[1][0] = "50";
+	$str[1][1] = "50 рублей";
+	
+	$str[2][0] = "90";
+	$str[2][1] = "90 рублей";
+	
+
+							
+?>
+
 <div class="container">
 <header>
 <a class="login" href="/bitrix/admin/">Войти</a>
@@ -16,7 +32,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div id="form2" style="display:none;"   class="form">
 Ваша заявка получена. <br>
 <br> Для&nbspначала&nbspработы&nbspHR-эксперта&nbsp<br>
-оплатите&nbsp21&nbspрубль. Спасибо.<br>
+оплатите&nbsp<?=$str[$num][1]?>. Спасибо.<br>
 <br>
 	<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&any-card-payment-type=on&button-text=01&button-size=l&button-color=orange&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D0%B8&default-sum=21&fio=on&mail=on&phone=on" width="259" height="54"></iframe>
 	
@@ -26,39 +42,6 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <form onsubmit="return false" id='resume'>
 <fieldset>
 
-						<?
-							$num = 1;//rand(0,2);
-							$str[0][0] = "21";
-							$str[0][1] = "21 рубль";
-							
-							$str[1][0] = "50";
-							$str[1][1] = "50 рублей";
-							
-							$str[2][0] = "90";
-							$str[2][1] = "90 рублей";
-							
-
-/*
-							$str[0][0] = "190";
-							$str[0][1] = "за 190 руб.";
-							
-							$str[1][0] = "290";
-							$str[1][1] = "за 290 руб.";
-							
-							$str[2][0] = "390";
-							$str[2][1] = "за 390 руб.";
-							
-							$str[3][0] = "490";
-							$str[3][1] = "за 490 руб.";
-							
-							$str[4][0] = "90";
-							$str[4][1] = "за 90 руб.";
-							
-							$str[5][0] = "free";
-							$str[5][1] = "бесплатно";
-*/							
-													
-						?>
 						<div class="form-title">Консультация всего за <?=$str[$num][1]?></div>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
 						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'> Спросить у HR-эксперта</button></fieldset>
