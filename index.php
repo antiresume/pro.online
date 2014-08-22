@@ -42,7 +42,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <form onsubmit="return false" id='resume'>
 <fieldset>
 
-						<div class="form-title">Консультация всего за <?=$str[$num][1]?></div>
+						<div class="form-title">Консультация от <?=$str[$num][1]?></div>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
 						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'> Спросить у HR-эксперта</button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
