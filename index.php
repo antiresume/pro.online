@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 
 <div class="container">
 <header>
-<span class="login" href="#">Позвоните нам<br><div style="font-size:35px; padding-top: 10px;">+7 985 199-44-66</div></span>
+<span class="login" href="#">вход</span>
 <div class="header-title">Правильное-резюме.онлайн</div>
 <div class="header-subtitle">Правильное резюме интересно работодателю!</div>
 </header>
