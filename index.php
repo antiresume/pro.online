@@ -20,7 +20,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 
 <div class="container">
 <header>
-<a class="login" href="/bitrix/admin/">Войти</a>
+<span class="login" href="#">Позвоните нам<br><div style="font-size:35px; padding-top: 10px;">+7 985 199-44-66</div></span>
 <div class="header-title">Правильное-резюме.онлайн</div>
 <div class="header-subtitle">Правильное резюме интересно работодателю!</div>
 </header>
@@ -42,7 +42,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <form onsubmit="return false" id='resume'>
 <fieldset>
 
-						<div class="form-title">Консультация от <?=$str[$num][1]?></div>
+						<div class="form-title">Знаете какие ошибки у вас в резюме?</div>
 						<input type="text" class="validate" name="email"  placeholder="Ваш E-mail" title='Введите Ваш E-mail'>
 						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'> Спросить у HR-эксперта</button></fieldset>
 											<input type="hidden"  name="form_name" value="А у вас правильное резюме?">
@@ -62,7 +62,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 </div>
 </div>
 <footer>
-<div class="footer-title">Мы рекомендуем <span>правильное резюме</span> для сайтов:</div>
+<div class="footer-title">Мы продвигаем ваш профиль с <span>правильным резюме</span> на сайтах:</div>
 <div class="links">
 <div class="link-wrap1">
 <div class="link1" href="http://hh.ru" target="_blank"></div>
