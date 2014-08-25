@@ -5,13 +5,8 @@
 		$form_name = "FORM NAME NO SET";
 		$email = "EMAIL NO SET";
 		$type = "TYPE NO SET";
-		
-		$pay["free"]  = 0;
-		$pay[90]  = "a";
-		$pay[190] = "b";
-		$pay[290] = "c";
-		$pay[390] = "d";
-		$pay[490] = "e";
+		$name = "NAME NO SET";
+		$tel = "TEL NO SET";
 		
 		foreach ($_GET as $key => $val) {
 			${$key} = $val;
@@ -20,7 +15,7 @@
 		$to  = "cv@antiresu.me";
 		$from  = "noreply@antiresu.me" ;		
 							
-		$subject = "Заявка ".date("Y.m.d H:i:s")." ".$type."\r\n"; 
+		$subject = "Заявка с сайта ".date("Y.m.d H:i:s")." ".$type."\r\n"; 
 		
 		$emessage = '
 		<html>
@@ -28,20 +23,28 @@
 			<title>'.$form_name.'</title>
 			</head>
 		<body>
-			<div style="width: 660px;">
-				'.$email.'<br>'.$type.'
+			<div style="width: 660px;">';
+
+
+		foreach ($_GET as $key => $val) {
+			${$key} = $val;
+		$emessage .= '[  '.$key.'  ] -> [  '.$val.'  ]<br><br>';
+		}
+
+		
+		$emessage .= '
 			</div>
 		</body>
 		</html>';							
 		$headers  = "Content-type: text/html; charset=utf-8 \r\n";
 		$headers .= "From: ".$from."\r\n";
 							
-		//if(mail($to, $subject, $emessage, $headers)) echo 'sended to CV <br>';
-		//	else echo "error <br>";
+		if(mail($to, $subject, $emessage, $headers)) echo 'sended to CV <br>';
+			else echo "error <br>";
 		
 		
 		
-		
+	exit(0);	
 		
 		
 		//send to CRM 
