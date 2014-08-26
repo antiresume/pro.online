@@ -40,8 +40,8 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 						<input type="hidden"  name="form_name" value="Обратный звонок">
 
 						<? if(0){?><div class="form-title">Знаете какие ошибки у вас в резюме?</div><?}?>
-						<input type="text" class="validate" name="name"  placeholder="Представьтесь" title='Введите Ваш E-mail'>
-						<input type="text" class="validate" name="tel"  placeholder="Ваш номер мобильного" title='Введите Ваш E-mail'>
+						<input type="text" class="validate" name="name"  placeholder="Представьтесь" title='Укажите ваше имя'>
+						<input type="text" class="validate" name="tel"  placeholder="Ваш номер мобильного" title='Укажите контактный мобильный'>
 						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Перезвоните мне сегодня</button></fieldset>
 </form>
 
