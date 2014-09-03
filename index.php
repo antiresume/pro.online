@@ -22,7 +22,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <header>
 <span class="login" href="#">&nbsp</span>
 <div class="header-title">Правильное-резюме.онлайн</div>
-<div class="header-subtitle">Правильное резюме интересно работодателю!</div>
+<div class="header-subtitle">Ваше преимущество при поиске работы!</div>
 </header>
 <div class="content clearfix">
 <div class="happy">
