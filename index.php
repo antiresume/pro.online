@@ -43,7 +43,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 						<input type="text" class="validate" name="name"  placeholder="Представьтесь" title='Укажите ваше имя'>
 						<input type="text" class="validate" name="tel"  placeholder="Hомер вашего мобильного" title='Укажите контактный мобильный'>
 						<input type="text" class="validate" name="email"  placeholder="Электронная почта" title='Введите email'>
-						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Перезвоните мне сегодня</button></fieldset>
+						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Перезвоните мне </button></fieldset>
 </form>
 
 </div>
