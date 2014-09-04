@@ -307,8 +307,8 @@ footer { display: block; }
 	margin: 0 auto;
 
 	width: 366px;
-	height: 375px;
-	margin-top: 26px;
+	height: 305px;
+	margin-top: 46px;
 
 	background: url(../images/elips.png) center bottom no-repeat;
 }
@@ -323,7 +323,7 @@ footer { display: block; }
 
 .form form {
 	width: 346px;
-	height: 311px;
+	height: 235px;
 	padding: 10px;
 	
 

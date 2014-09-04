@@ -29,10 +29,10 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div class="cup"></div>
 <div class="eyes"></div>
 </div>
-<div id="form2" style="display:none;"   class="form">
+<div id="form2" style="display:none;"   class="form"><noindex>
 <br><br>Спасибо за интерес к нашему проекту. <br>
-<br> Ожидайте, пожалуйста, нашего звонка. <br><br>Спасибо.<br>
-
+<br> Ожидайте, пожалуйста, нашего email. <br><br>Спасибо.<br>
+</noindex>
 </div>
 <div id="form1" class="form">
 <form onsubmit="return false" id='resume'>
@@ -41,9 +41,8 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 
 						<? if(0){?><div class="form-title">Знаете какие ошибки у вас в резюме?</div><?}?>
 						<input type="text" class="validate" name="name"  placeholder="Представьтесь" title='Укажите ваше имя'>
-						<input type="text" class="validate" name="tel"  placeholder="Hомер вашего мобильного" title='Укажите контактный мобильный'>
 						<input type="text" class="validate" name="email"  placeholder="Электронная почта" title='Введите email'>
-						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Перезвоните мне </button></fieldset>
+						<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Начать бесплатно</button></fieldset>
 </form>
 
 </div>
@@ -104,9 +103,9 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 </div>
 </div>
 	<div id="modal_success">
-		<div class="success">
-			<div class="form_title">Заявка на обратный звонок принята!</div>	
-			<p>Ожидайте, пожалуйста, нашего звонка.<br>
+		<div class="success"><noindex>
+			<div class="form_title">Заявка принята!</div>	
+			<p>Ожидайте, пожалуйста, нашего ответа на указанный email.<br>
 <?if(0){?>			<br>
 				Если его нет, то проверьте, пожалуйста, вкладку "Спам" или<br>
 				напишите письмо на email <a href="mailto:crm@antiresu.me">crm@antiresu.me</a> сами.<br>
@@ -115,6 +114,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 				Спасибо за интерес к проекту!
 			</p>
 			<button class="close_fancy">Ок</button>
+			</noindex>
 		</div>
 	</div>
 
