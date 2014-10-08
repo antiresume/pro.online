@@ -2,3 +2,4 @@ bitrix
 upload
 config
 webstat
+*.json

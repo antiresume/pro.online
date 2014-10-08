@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Правильное-резюме.онлайн</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+<script type="text/javascript" src="fancyBox/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script src="js/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript">
+		$(function() {
+				$('#slider').carouFredSel({
+					auto: false,
+					
+					prev: '#prev',
+					next: '#next',
+					mousewheel: false,
+					direction	: "left",
+	
+					swipe: {
+						onMouse: false,
+						onTouch: false
+					}
+				});
+			
+			});
+				$(document).ready(function() {
+					$("#popup, #sogl").fancybox({
+						
+						fitToView	: false,
+						padding     : 0,
+					
+						
+						autoSize	: true,
+						closeClick	: false,
+						openEffect	: 'none',
+						closeEffect	: 'none',
+					});
+				});
+		
+</script>
+</head>
+
+  <body>
+<script type="text/javascript">
+            jQuery(document).ready(function update(){
+                
+                    jQuery.getJSON('example.json', {}, function(json){
+					    jQuery('.all_res').html('');
+                        jQuery('.all_res').append(json.note.all_rezume);
+                        jQuery('.req_t').html('');
+                        jQuery('.req_t').append(json.note.today_request);
+						jQuery('.all_quest').html('');
+                        jQuery('.all_quest').append(json.note.all_questions);
+                                            
+                    });   
+setInterval(update,15000);	// статистика обновляется каждые 15сек				
+                
+            });
+        </script>   
+		<div id="header">
+			<div class="top">
+				<div class="content">
+				Сделайте <span>Правильное-резюме.онлайн</span> вместе с экспертом
+				</div>
+			</div>	
+			<div class="banner">
+				<div class="content">
+					<div class="banner_text">
+						<div class="bt_1">
+							<span class="red">Оплати прямо сейчас</span> и <br />
+							получи в подарок<br />
+							<span class="red">14 дней консультации!</span>
+							<div class="end">До конца акции осталось:</div>
+							<div id="countdown"></div>
+							<div class="t1">Дни</div>
+							<div class="t2">Часы</div>
+							<div class="t3">Минуты</div>
+							<div class="t4">Секунды</div>
+						</div>
+						<div class="bt_2">
+						Получить больше <span class="green">приглашений</span><br/>
+						на собеседования
+						<div class="price_line">
+							Всего за <div class="price">490</div>
+						</div>
+						
+						</div>
+						<a class="popup" href="#popup" title="">
+							ИСПРАВИТЬ <span>А</span>ШИ<span>П</span>КИ
+						</a>
+						<div class="clear"></div>
+						<div class="conf">
+							Информация ни в коем случае не будет передана третьим лицам. Запрашиваемая информация необходима исключительно для связи с вами и улучшения нашего сервиса для вашего комфорта.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="numbers">
+				<div class="content">
+				  <div class="ni_block">
+					<div class="number_item">
+						<div class="chislo all_res">310</div>
+						резюме <br />создано
+					</div>
+					<div class="number_item ni_center">
+						<div class="chislo req_t">15</div>
+						заявок <br />сегодня
+					</div>
+					<div class="number_item ni_last">
+						<div class="chislo all_quest">873</div>
+						вопросов  <br />задано
+					</div>
+				  </div>
+					
+				</div>
+			</div>
+			
+				
+			
+		</div>
+		<div id="block1">
+				<div class="content">
+					<div class="b1_img b1i_first">
+						<img src="images/tr1.jpg" alt="" />
+					</div>
+					<div class="b1_img">
+						<img src="images/tr2.jpg" alt="" />
+					</div>
+					<div class="b1_img b1i_last">
+						<img src="images/tr3.jpg" alt="" />
+					</div>
+				</div>
+					
+		</div>
+		<div class="title">
+			<div class="content">
+				Мы поможем вам, если вас беспокоят следующие вопросы:
+			</div>
+		</div>
+		<div id="voprosu">
+			<div class="content">
+				<div class="voprosu_icon">
+					<img src="images/pencil.png" alt="" />
+				</div>
+				<div class="voprosu_text">
+				1. Почему мало откликов на ваше резюме?<br />
+				2. Подходят ли ваши знания и опыт желаемой позиции?<br />
+				3. Почему не приглашают на собеседования?<br />
+				4. Как доработать резюме, чтобы взяли на должность руководителя?<br />
+				5. Готово ли ваше резюме для отправки работодателю?<br />
+				6. Что писать в сопроводительном письме?<br />
+				7. Как быстрее найти работу?
+
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<div class="content">
+				Как это работает?
+			</div>
+		</div>
+		<div id="work">
+			<div class="content">
+				<div class="work_item">
+					<img src="images/work1.png" alt="" />
+					<div class="work_text">
+						Загружаете<br />резюме
+					</div>
+				</div>
+				<div class="work_item">
+					<img src="images/work2.png" alt="" />
+					<div class="work_text">
+						Получаете<br />комментарии от<br />эксперта
+					</div>
+				</div>
+				<div class="work_item">
+					<img src="images/work3.png" alt="" />
+					<div class="work_text">
+						Задаете<br />уточняющие<br />вопросы
+					</div>
+				</div>
+				<div class="work_item">
+					<img src="images/work4.png" alt="" />
+					<div class="work_text">
+						Получаете больше<br />приглашений на<br />собеседования
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<div class="content">
+				Уже есть правильное резюме, но еще нет работы?
+			</div>
+		</div>
+		<div id="nowork">
+			<div class="content">
+				<div class="nw_item">
+				   <div class="nw_img"><img src="images/rez1.png" alt="" /></div>
+					<div class="nw_text">
+				       <span>Проактивный поиск работы</span><br />
+					   (если нет приглашений на собеседования)
+					   <br /><br />
+					   - 30 минут онлайн общения с экспертом<br />
+						- написание проактивного резюме с нуля<br />
+						- помощь в поиске вакансий<br />
+						- помощь в откликах на вакансии<br />
+						- 1 месяц email консультаций
+					</div>
+					
+				</div>
+				<div class="nw_item nw_right">
+				   <div class="nw_img"><img src="images/rez2.png" alt="" /></div>
+					<div class="nw_text">
+				       <span>Пройти пробное собеседование</span><br />
+					   (если нет повторных собеседований)
+					   <br /><br />
+					   - 60 минут онлайн общения с экспертом<br />
+						- получение правдивой обратной связи<br />
+						- обучение правильным словам собеседовании<br />
+						- возможность отрепетировать самопрезентацию<br />
+						- 1 месяц email консультаций
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<div class="content">
+				Кто мы?
+			</div>
+		</div>
+		<div id="who">
+			<div class="content">
+				<div class="man">
+					<img src="images/man.jpg" alt="" />
+				</div>
+				<div class="who_text">
+					<div class="name_man">
+						Владимир Якуба
+						<span>(партнер проекта)</span></div><br />
+						32 года. 12 лет в сфере подбора и оценки персонала. <br /><br />
+
+						Один из лучших хедхантеров России: ТОП 7 и ТОП 4 по версии журналов «Управление персоналом» и «ПРОФИЛЬ» 2012. <br /><br />
+
+						Ведущий ТВ программы «Кадры решают», участник реалити-шоу «Кандидат с Владимиром Потаниным» на канале ТНТ. <br /><br />
+
+						 Постоянный эксперт в передачах федеральных <br />
+						телеканалов и на страницах деловых изданий. 
+					
+				</div>
+			</div>
+		</div>
+		<div id="experts">
+			<div class="content">
+				<div class="exp_title">
+				Наши експерты:
+				</div>
+				<div class="exp">
+					<img src="images/ava1.jpg" alt="" />
+					Валетина Иванова
+				</div>
+				<div class="exp">
+					<img src="images/ava2.jpg" alt="" />
+					Мария Болотникова
+				</div>
+				<div class="exp">
+					<img src="images/ava3.jpg" alt="" />
+					Анастасия Дробышева
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<div class="content">
+				Отзывы наших клиентов
+
+			</div>
+		</div>
+		<div id="feed">
+			<div class="content">
+				<ul id="slider">
+				<!-- отзыв 1 -->
+				   <li>
+						<div class="f_ava">
+							<img src="images/feed_ava1.jpg" alt="" />
+						</div>
+			
+						<div class="comment">
+							<div class="comm_title">
+							Создав правильное резюме с экспертом я понял, как надо искать работу
+							</div>
+							Отликаюсь на 10-15 вакансий в день, очень часто мое резюме не было просмотрено. Приглашения были на неинтересные вакансии. Создав правильное резюме с экспертом мне объяснили как надо искать работу и я полностью переделал свое резюме - результат: нашел очень привлекательную работу за три дня!
+							<div class="comm_avtor">
+							Владимир Твердов <br />
+							(Москва, руководитель проектов)
+							</div>
+						</div>
+											
+				   </li>
+				   <!-- отзыв 2 -->
+				    <li>
+						<div class="f_ava">
+							<img src="images/feed_ava1.jpg" alt="" />
+						</div>
+						
+						<div class="comment">
+							<div class="comm_title">
+							Создав правильное резюме с экспертом я понял, как надо искать работу
+							</div>
+							Отликаюсь на 10-15 вакансий в день, очень часто мое резюме не было просмотрено. Приглашения были на неинтересные вакансии. Создав правильное резюме с экспертом мне объяснили как надо искать работу и я полностью переделал свое резюме - результат: нашел очень привлекательную работу за три дня!
+							<div class="comm_avtor">
+							Владимир Твердов <br />
+							(Москва, руководитель проектов)
+							</div>
+						</div>
+						
+				   </li>
+				   <!-- отзыв 3 -->
+				      <li>
+						<div class="f_ava">
+							<img src="images/feed_ava1.jpg" alt="" />
+						</div>
+						
+						<div class="comment">
+							<div class="comm_title">
+							Создав правильное резюме с экспертом я понял, как надо искать работу
+							</div>
+							Отликаюсь на 10-15 вакансий в день, очень часто мое резюме не было просмотрено. Приглашения были на неинтересные вакансии. Создав правильное резюме с экспертом мне объяснили как надо искать работу и я полностью переделал свое резюме - результат: нашел очень привлекательную работу за три дня!
+							<div class="comm_avtor">
+							Владимир Твердов <br />
+							(Москва, руководитель проектов)
+							</div>
+						</div>
+						
+				   </li>
+				</ul>
+				<a id="prev" class="prev" href="#" ></a>
+				<a id="next" class="next" href="#" ></a>
+			</div>
+		</div>
+		<div class="title">
+			<div class="content">
+				Наши партнеры <span>(кадровые агентства и порталы)</span>
+
+			</div>
+		</div>
+		<div id="partners">
+			<div class="content">
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner1.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner2.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner3.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				<div class="partner">
+					<a  href="" title="">
+						<img src="images/partner_img.png" alt="" />
+					</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="title">
+			<div class="content">
+				Получить больше приглашений на собеседования
+
+
+			</div>
+		</div>
+		<div id="footer">
+			<div class="content">
+				<a class="popup" href="#popup" title="">
+							ИСПРАВИТЬ <span>А</span>ШИ<span>П</span>КИ
+				</a>
+				<div class="f_text">в резюме вместе с экспертом прямо сейчас</div>
+			</div>
+		</div>
+		<div id="bottom">
+			<div class="content">
+				<a class="sogl" href="#sogl" title="">Соглашение об обработке персональной информации</a>
+			</div>
+		</div>
+		
+	<div id="popup">
+		<div class="popup_title">
+			Оплатить консультацию эксперта
+		</div>
+		<div class="cena">
+			490
+		</div>
+		Способы оплаты:
+		<div class="clear"></div>
+		<iframe class="b_left" frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=410000000&quickpay=small&any-card-payment-type=on&button-text=01&button-size=m&button-color=white" width="185" height="42"></iframe>
+		<iframe class="b_right" frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41000000&quickpay=small&yamoney-payment-type=on&button-text=01&button-size=m&button-color=white&targets=11&default-sum=11&successURL=4324" width="185" height="42"></iframe>
+	</div>
+	<div id="sogl">
+	  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель
+	</div>
+  </body>
+</html>

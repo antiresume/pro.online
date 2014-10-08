@@ -1,0 +1,697 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME, H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE, A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE, DEL, DFN, EM, FONT, IMG, INS, KBD, Q, S, SAMP, SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR, DL, DT, DD, OL, UL, LI, FIELDSET, FORM, LABEL, LEGEND, TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus
+{
+	outline: 0;
+}
+OL, UL, LI
+{
+	list-style: none;
+}
+A
+{
+	text-decoration: none;
+}
+.clear
+{
+	clear: both;
+}
+HTML
+{
+	font-family: "PT Sans", Arial;
+}
+.content
+{
+	max-width: 1024px;
+	margin: 0px auto;
+	min-width: 800px;
+}
+#header
+{
+	min-width: 800px;
+}
+.top
+{
+	text-align: center;
+	font-size: 36px;
+	font-family: "PT Sans Narrow";
+	height: 90px;
+	padding-top: 16px;
+}
+.top SPAN
+{
+	font-weight: bold;
+	font-size: 38px;
+}
+.banner
+{
+	background: url(images/banner.jpg) no-repeat center top;
+	height: 540px;
+	padding-top: 176px;
+}
+.banner_text
+{
+	width: 700px;
+	margin: 0px auto;
+	background: url(images/opac.png);
+	padding: 15px 15px 11px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.bt_1
+{
+	background-color: #FFFFFF;
+	float: left;
+	width: 325px;
+	border-radius: 5px;
+	border-top: 4px solid #EFEFEF;
+	font-size: 24px;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 219px;
+	padding-right: 35px;
+}
+.bt_1 .red
+{
+	color: #E41515;
+	font-weight: normal;
+}
+.t1, .t2, .t3, .t4
+{
+	float: left;
+	font-size: 11px;
+	width: 61px;
+	text-align: center;
+}
+.end
+{
+	text-align: center;
+	font-size: 14px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+.bt_2
+{
+	float: right;
+	background-color: #FFFFFF;
+	border-top: 4px solid #EFEFEF;
+	border-radius: 5px;
+	font-size: 21px;
+	width: 336px;
+	padding-left: 12px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.bt_2 .green
+{
+	color: #34A939;
+	font-weight: bold;
+}
+.price_line
+{
+	font-size: 24px;
+	font-weight: bold;
+	padding-left: 32px;
+	padding-top: 8px;
+	padding-right: 24px;
+}
+.price
+{
+	background: transparent url(images/price.png) no-repeat;
+	width: 141px;
+	height: 64px;
+	float: right;
+	padding-left: 31px;
+	padding-top: 16px;
+	display: inline;
+	margin-top: -12px;
+}
+.popup
+{
+	display: block;
+	background-color: #FBD628;
+	float: right;
+	width: 336px;
+	margin-top: 10px;
+	height: 71px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 24px;
+	color: #000000;
+	font-weight: bold;
+	padding-top: 20px;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(240,160,40,1);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(240,160,40,1);
+	box-shadow: 0px 4px rgba(240, 160, 40, 1);
+}
+.popup:hover
+{
+	background: #F3CC11;
+}
+.popup SPAN
+{
+	color: #F32B2B;
+}
+.conf
+{
+	margin-top: 6px;
+	font-size: 13px;
+	font-weight: bold;
+}
+#numbers
+{
+	background-color: #5E87AE;
+	color: #FFFFFF;
+	font-family: "PT Sans Narrow";
+	overflow: hidden;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	min-width: 800px;
+}
+.number_item
+{
+	float: left;
+	line-height: 1;
+	font-size: 30px;
+	font-weight: bold;
+	width: 33%;
+}
+.chislo
+{
+	float: left;
+	font-size: 60px;
+	font-weight: bold;
+	margin-right: 11px;
+}
+.ni_block
+{
+	overflow: hidden;
+	max-width: 900px;
+	margin: 0px auto;
+}
+.ni_last
+{
+	float: right;
+	width: auto;
+}
+.ni_center
+{
+	margin-left: 56px;
+}
+#block1
+{
+	margin: 0px auto;
+	overflow: hidden;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: #EDECEC;
+	min-width: 800px;
+}
+#block1 .content
+{
+	width: 800px;
+}
+.b1
+{
+	background-color: #EDECEC;
+}
+.b1_img
+{
+	float: left;
+	border-radius: 22px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	height: 207px;
+}
+.b1i_last
+{
+	float: right;
+}
+.b1i_first
+{
+	margin-right: 60px;
+}
+.title
+{
+	font-size: 36px;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	min-width: 800px;
+}
+.title SPAN
+{
+	font-weight: 400;
+}
+.title .content
+{
+	padding-left: 50px;
+}
+#voprosu
+{
+	background-color: #EDECEC;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+	font-size: 24px;
+	min-width: 800px;
+	color: #000000;
+}
+.voprosu_icon
+{
+	float: left;
+	margin-left: 32px;
+	width: 17%;
+	min-width: 175px;
+}
+.voprosu_text
+{
+	float: right;
+	line-height: 1.5;
+	word-break: break-all;
+	width: 73%;
+}
+.work_item
+{
+	float: left;
+	width: 25%;
+	text-align: center;
+	font-size: 24px;
+	line-height: 1.2;
+}
+.work_item IMG
+{
+	margin-bottom: 10px;
+}
+#work
+{
+	background-color: #EDECEC;
+	min-width: 800px;
+	overflow: hidden;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.nw_item
+{
+	width: 45%;
+	float: left;
+}
+.nw_img
+{
+	text-align: center;
+}
+.nw_text
+{
+	/*[disabled]max-width:400px;*/
+	margin: 25px auto 0px;
+	width: 390px;
+	font-size: 20px;
+}
+.nw_text SPAN
+{
+	font-weight: bold;
+	font-size: 28px;
+}
+.nw_right
+{
+	float: right;
+	width: 54% !important;
+}
+.nw_right .nw_text
+{
+	width: 443px !important;
+}
+#nowork
+{
+	overflow: hidden;
+	background-color: #EDECEC;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	min-width: 800px;
+}
+#who
+{
+	background-color: #ECEAEB;
+	overflow: hidden;
+	min-width: 800px;
+	padding-top: 40px;
+	position: relative;
+	padding-bottom: 20px;
+}
+.man
+{
+	float: left;
+	width: 53%;
+	position: absolute;
+	max-height: 603px;
+	height: 375px;
+	bottom: 0px;
+}
+.man IMG
+{
+	width: 100%;
+	max-width: 543px;
+	height: auto;
+	position: absolute;
+	bottom: 0px;
+}
+.who_text
+{
+	font-size: 18px;
+	float: right;
+	width: 44%;
+}
+.name_man
+{
+	font-weight: bold;
+	font-size: 36px;
+}
+.name_man SPAN
+{
+	font-size: 18px;
+	font-family: Lobster;
+	font-weight: 400;
+}
+#experts
+{
+	padding-top: 30px;
+	min-width: 800px;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.exp
+{
+	float: left;
+	width: 33%;
+	text-align: center;
+	font-family: Lobster;
+	font-size: 18px;
+	color: #424242;
+}
+.exp IMG
+{
+	display: block;
+	margin: 0px auto 15px;
+}
+.exp_title
+{
+	font-size: 24px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+#slider
+{
+	width: 750px;
+	overflow: hidden;
+	/*[disabled]height:280px;*/
+	margin: 0px auto;
+}
+#slider LI
+{
+	float: left;
+	width: 750px;
+	min-height: 300px;
+}
+.f_ava
+{
+	float: left;
+}
+.comment
+{
+	float: right;
+	width: 496px;
+	font-size: 18px;
+}
+.comm_title
+{
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 18px;
+}
+.comm_avtor
+{
+	font-style: italic;
+	margin-top: 17px;
+}
+#feed
+{
+	background-color: #EDECEC;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	min-width: 800px;
+}
+#feed .content
+{
+	position: relative;
+}
+.caroufredsel_wrapper
+{
+	margin: 0px auto !important;
+}
+.prev
+{
+	background: transparent url(images/prev.jpg) no-repeat;
+	width: 50px;
+	display: block;
+	height: 60px;
+	top: 80px;
+	position: absolute;
+}
+.next
+{
+	background: transparent url(images/next.jpg) no-repeat;
+	width: 50px;
+	display: block;
+	height: 60px;
+	top: 80px;
+	position: absolute;
+	right: 0px;
+}
+.partner
+{
+	float: left;
+	width: 14%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.partner IMG
+{
+	width: 99px;
+	height: 100px;
+}
+#partners
+{
+	background-color: #EDECEC;
+	overflow: hidden;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	min-width: 800px;
+}
+#footer
+{
+	background-color: #EDECEC;
+	overflow: hidden;
+	padding-top: 25px;
+	min-width: 800px;
+	padding-bottom: 25px;
+}
+#footer .popup
+{
+	float: left;
+	width: 34%;
+}
+.f_text
+{
+	font-size: 30px;
+	/*[disabled]float:right;*/
+	width: 61%;
+	height: 89px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10%;
+}
+#bottom
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+#bottom A
+{
+	font-size: 18px;
+	float: right;
+	color: #898787;
+}
+#bottom A:hover
+{
+	text-decoration: underline;
+}
+#popup
+{
+	background: #5D87AD url(images/oplata.jpg) no-repeat bottom center;
+	width: 520px;
+	height: 339px;
+	padding: 15px 26px;
+	font-family: "PT Sans Narrow";
+	color: #FFFFFF;
+	font-size: 24px;
+	display: none;
+}
+.popup_title
+{
+	font-family: "PT Sans Narrow";
+	font-size: 34px;
+	text-align: center;
+	color: #E4E4E4;
+	font-weight: bold;
+}
+.cena
+{
+	background: url(images/cena.png) repeat;
+	font-family: "PT Sans Narrow";
+	width: 213px;
+	height: 114px;
+	margin: 10px auto 7px;
+	font-size: 60px;
+	font-weight: bold;
+	padding-left: 47px;
+	padding-top: 10px;
+	color: #000000;
+}
+.b_right
+{
+	float: right;
+}
+#sogl
+{
+	width: 520px;
+	background-color: #FFFFFF;
+	padding: 20px;
+	display: none;
+}
+.countdownHolder
+{
+	width: 450px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "PT Sans Narrow";
+	font-size: 35px;
+	color: #000000;
+}
+.position
+{
+	display: inline-block;
+	height: 47px;
+	overflow: hidden;
+	position: relative;
+	width: 29px;
+	float: left;
+}
+.digit
+{
+	position: absolute;
+	display: block;
+	width: 30px;
+	border-radius: 0.2em;
+	text-align: center;
+	letter-spacing: -1px;
+}
+.digit.static
+{
+}
+/**
+* You can use these classes to hide parts
+* of the countdown that you don't need.
+ */
+.countDays
+{
+/*display:none !important;*/
+	background: url(images/timer.png) no-repeat;
+	width: 59px;
+	height: 52px;
+	display: block;
+	float: left;
+}
+.countDiv0
+{
+/*display:none !important;*/
+}
+.countHours
+{
+	background: url(images/timer.png) no-repeat;
+	width: 59px;
+	height: 52px;
+	display: block;
+	float: left;
+	margin-left: 3px;
+}
+.countDiv1
+{
+}
+.countMinutes
+{
+	background: url(images/timer.png) no-repeat;
+	width: 59px;
+	height: 52px;
+	display: block;
+	float: left;
+	margin-left: 3px;
+}
+.countDiv2
+{
+}
+.countSeconds
+{
+	background: url(images/timer.png) no-repeat;
+	width: 59px;
+	height: 52px;
+	display: block;
+	float: left;
+	margin-left: 3px;
+}
+.countDiv
+{
+	display: none;
+	width: 16px;
+	height: 1.6em;
+	position: relative;
+}
+.countDiv:before, .countDiv:after
+{
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: #444;
+	border-radius: 50%;
+	left: 50%;
+	margin-left: -3px;
+	top: 0.5em;
+	box-shadow: 1px 1px 1px rgba(4, 4, 4, 0.5);
+	content: '';
+}
+.countDiv:after
+{
+	top: 0.9em;
+}
