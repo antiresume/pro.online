@@ -1,4 +1,5 @@
 <?php 
+chdir("www/xn----7sbgmbane1aogmhoi1qqb.xn--80asehdb/");
 $json_file = "lp_example.json";
 
 
