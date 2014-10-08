@@ -1,11 +1,10 @@
-<pre>
 <?php 
 $json_file = "lp_example.json";
 
 
 $json = file_get_contents($json_file);
 $arr=json_decode($json,true); 
-print_r($arr['note']);
+//echo "<pre>";print_r($arr['note']);
 /* $arr['note']['today']=rand(1,5); */
 if ($arr['note']['last_update'] != date("m.d.y")) // проверяем последнее обновление и текущую дату, если наступил новый день то обнуляем суточные счетчики
 {
@@ -60,6 +59,6 @@ $f = fopen($json_file, 'w');
 fputs($f, json_encode($arr));
 fclose($f);
 
-print_r($arr['note']);
+//print_r($arr['note']);
+//echo "</pre>";
 ?>
-</pre>
