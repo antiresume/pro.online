@@ -139,8 +139,10 @@
 <?}?>
 						</div>	
 						<div class="bt_2">
-							Получить больше <span class="green">приглашений</span><br/>
+<?if(0){?>							Получить больше <span class="green">приглашений</span><br/>
 							на собеседования
+<?}?>
+							Уже есть резюме?<br> Покажите его эксперту
 							<div class="price_line">
 								Всего за <div class="price"><?=$sum?></div>
 							</div>
