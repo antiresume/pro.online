@@ -1,6 +1,6 @@
 <?
 	
- $sum = 490;//  Сумма к оплате.
+ $sum = 50;//  Сумма к оплате.
 	
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -124,7 +124,7 @@
 					<div class="banner_text">
 						<div class="bt_1">
 
-							Если у вас нет резюме - вы можете сделать его самостоятельно<br>
+							Если Вы ищете себе сотрудников? <br> <br>
 							
 <?if(0){?>
 							<span class="red">Оплати прямо сейчас</span> и <br />
@@ -142,15 +142,15 @@
 <?if(0){?>							Получить больше <span class="green">приглашений</span><br/>
 							на собеседования
 <?}?>
-							Уже есть резюме?<br> Покажите его эксперту
+							Мы платим Вам за найденную работу с правильным резюме!
 							<div class="price_line">
-								Всего за <div class="price"><?=$sum?></div>
+								Награда <div class="price">500</div>
 							</div>
 						
 						</div>
-						<a href="/index_blue.php" class="popup_left">СОЗДАТЬ РЕЗЮМЕ </a>
+						<a href="/index_blue.php" class="popup_left">ДЛЯ РАБОТОДАТЕЛЕЙ </a>
 						<a class="popup" href="#popup" title="">
-							ИСПРАВИТЬ <span>А</span>ШИ<span>П</span>КИ
+							РЕГИСТРАЦИЯ
 						</a>
 						<div class="clear"></div>
 						<div class="conf">
@@ -184,6 +184,27 @@
 				
 			
 		</div>
+		<div class="title">
+			<div class="content">
+				Откуда мы берем деньги на вознаграждение?
+			</div>
+		</div>
+		<div id="voprosu">
+			<div class="content">
+				<div class="voprosu_icon">
+					<img src="lp_images/recruter.png" alt="" />
+				</div>
+				<div class="voprosu_text">
+					Все просто - нам платит Ваш будущий работодатель!
+					<br><span> А мы делимся частью этого вознаграждения с Вами!</span><br><br>
+					Ваш работодатель платит за экономию времени <br>
+					в подборе качественных кадров!<br>
+					
+					
+				</div>
+			</div>
+		</div>
+
 		<div class="title">
 			<div class="content">
 				Мы гарантируем увеличение просмотров и приглашений
@@ -235,19 +256,19 @@
 				<div class="work_item">
 					<img src="lp_images/work1.png" alt="" />
 					<div class="work_text">
-						<b>1.</b> Загружаете<br />резюме
-					</div>
-				</div>
-				<div class="work_item">
-					<img src="lp_images/work2.png" alt="" />
-					<div class="work_text">
-						<b>2.</b> Получаете<br />комментарии от<br />эксперта
+						<b>1.</b> Загружаете<br />резюме или<br> создаете с нуля
 					</div>
 				</div>
 				<div class="work_item">
 					<img src="lp_images/work3.png" alt="" />
 					<div class="work_text">
-						<b>З.</b> Задаете<br />уточняющие<br />вопросы
+						<b>2.</b> Отвечаете на<br />вопросы<br />эксперта
+					</div>
+				</div>
+				<div class="work_item">
+					<img src="lp_images/work2.png" alt="" />
+					<div class="work_text">
+						<b>3.</b> Мы рассылаем<br />ваше резюме<br />рекрутерам
 					</div>
 				</div>
 				<div class="work_item">
@@ -258,6 +279,20 @@
 				</div>
 			</div>
 		</div>
+		<div id="voprosu">
+			<div class="content">
+				<div class="voprosu_icon">
+					<img src="lp_images/bonus.png" alt="" />
+				</div>
+				<div class="voprosu_text">
+				<div class="name_man red center">А в случае успеха, в поиске работы, <br> 
+					вы получаете еще и заслуженную награду!</div>
+					
+				</div>
+			</div>
+		</div>
+
+
 		<div class="title">
 			<div class="content">
 				Кто мы?
@@ -459,9 +494,10 @@
 		<div id="footer">
 			<div class="content">
 				<a class="popup" href="#popup" title="">
-							ИСПРАВИТЬ <span>А</span>ШИ<span>П</span>КИ
+							ЗАРЕГИСТРИРУЙТЕСЬ
+							<?if(0){?>ИСПРАВИТЬ <span>А</span>ШИ<span>П</span>КИ<?}?>
 				</a>
-				<div class="f_text">в резюме вместе с экспертом прямо сейчас</div>
+				<div class="f_text"> прямо сейчас и работа найдет вас сама</div>
 			</div>
 		</div>
 		<div id="bottom">
@@ -472,20 +508,38 @@
 		</div>
 		
 	<div id="popup" name="popup">
+
+<?if(0){?>
+		<div id="form1" class="form">
+		<form onsubmit="return false" id='resume'>
+		<fieldset>
+								<input type="hidden"  name="form_name" value="Обратный звонок">
+		
+								<? if(0){?><div class="form-title">Знаете какие ошибки у вас в резюме?</div><?}?>
+								<input type="text" class="validate" name="name"  placeholder="Представьтесь" title='Укажите ваше имя'>
+								<input type="text" class="validate" name="email"  placeholder="Электронная почта" title='Введите email'>
+								<button class="send_button" onclick="yaCounter25865171.reachGoal('email','<?=$str[$num][0]?>'); return true;" rel='resume'>Начать бесплатно</button></fieldset>
+		</form>
+<?}?>
+
 		<div class="popup_title">
-			Оплатить консультацию эксперта
+			Регистрация в системе
 		</div>
+		<center><span>за чисто символическу плату.</span></center>
 		<div class="cena">
 			<?=$sum?>
 		</div>
-		Способы оплаты:
+		<span>&nbsp;&nbsp;&nbsp;Этим мы отсеиваем тех, кто не ищет работу и просто так будет тратить время наших экспертов. 
+		&nbsp;&nbsp;&nbsp;Пожалуйста, при оплате указывайте свой контактный email, так как его мы будем использовать для связи с вами!</span><br><br>
+		Способы оплаты через Яндекс:
 		<div class="clear"></div>
+		<iframe class="b_right" frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&yamoney-payment-type=on&button-text=01&button-size=m&button-color=white&targets=%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5.%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD+-+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F&default-sum=<?=$sum?>&fio=on&mail=on" width="185" height="42"></iframe>
 		
-		<iframe class="b_left" frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&yamoney-payment-type=on&button-text=01&button-size=m&button-color=white&targets=%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5.%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD+-+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F&default-sum=<?=$sum?>&fio=on&mail=on" width="185" height="42"></iframe>
-		
-<iframe class="b_right" frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&any-card-payment-type=on&button-text=01&button-size=m&button-color=white&targets=%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5.%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD+-+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F&default-sum=<?=$sum?>&fio=on&mail=on" width="185" height="42"></iframe>		
-		
+<iframe class="b_left" frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&any-card-payment-type=on&button-text=01&button-size=m&button-color=white&targets=%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5.%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD+-+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8F&default-sum=<?=$sum?>&fio=on&mail=on" width="185" height="42"></iframe>		
+<?if(0){?>		
+<?}?>		
 	</div>
+	
 	<div id="sogl">
 
 <span class="text_title">Соглашение об обработке персональных данных</span>

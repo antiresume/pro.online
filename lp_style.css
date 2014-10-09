@@ -132,6 +132,14 @@ HTML
 	color: #34A939;
 	font-weight: bold;
 }
+
+.red {
+	color:#d32e3a;
+}
+
+.center{
+	text-align: center;
+}
 .price_line
 {
 	font-size: 24px;
@@ -168,6 +176,10 @@ HTML
 	-webkit-box-shadow: 0px 4px 0px 0px rgba(240,160,40,1);
 	-moz-box-shadow: 0px 4px 0px 0px rgba(240,160,40,1);
 	box-shadow: 0px 4px rgba(240, 160, 40, 1);
+}
+
+#popup span{
+	font-size: 18px;
 }
 
 .popup_left{
@@ -316,6 +328,12 @@ HTML
 	word-break: break-all;
 	width: 73%;
 }
+
+.voprosu_text span{
+	font-weight: bold;
+	
+}
+
 .work_item
 {
 	float: left;
@@ -575,9 +593,9 @@ HTML
 }
 #popup
 {
-	background: #5D87AD url(lp_images/oplata.jpg) no-repeat bottom center;
-	width: 520px;
-	height: 339px;
+	background: #5D87AD url(lp_images/oplata2.jpg) no-repeat bottom center;
+	width: 620px;
+	height: 469px;
 	padding: 15px 26px;
 	font-family: "PT Sans Narrow";
 	color: #FFFFFF;
@@ -605,6 +623,28 @@ HTML
 	padding-top: 10px;
 	color: #000000;
 }
+
+.email {
+	font-family: "PT Sans Narrow";
+	width: 213px;
+	height: 114px;
+	margin: 10px auto 7px;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 27px;
+	padding-top: 10px;
+	color: #000000;
+}
+
+.email a:link, .email a:visited, .email a:active, .email a:hover {
+color:yellow;
+text-decoration: none;
+}
+
+.button a:hover {
+ background-color:yellow;color:blue
+ }
+
 .b_right
 {
 	float: right;
@@ -738,3 +778,85 @@ HTML
 	font-size: 20px;
 	
 }
+
+
+.form {
+	position: relative;
+	z-index: 20;
+
+	margin: 0 auto;
+
+	width: 366px;
+	height: 305px;
+	margin-top: 46px;
+
+	background: url(../images/elips.png) center bottom no-repeat;
+}
+
+
+
+.form form {
+	width: 340px;
+	height: 255px;
+	padding: 10px;
+	
+
+	background: #ff7d54;
+	border-radius: 6px;
+}
+
+.form-title {
+	margin: 12px 5px 8px 5px;
+
+	font-family: 'PT Sans Narrow', arial, sans-serif;
+	font-size: 23px;
+	font-weight: bold;	
+}
+
+.form fieldset {
+	padding: 0;
+	margin: 0;
+
+	border: none;
+}
+
+.form input,
+.form button {
+	width: 320px;
+	height: 60px;
+	margin: 10px 0 6px 0;
+	padding: 15px 15px;
+
+	font-family: 'PT Sans', arial, sans-serif;
+	font-size: 25px;
+
+	border: none;
+	border-radius: 6px;
+
+	outline: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form input[type="text"] {	
+	color: #7f7f7f;
+	box-shadow: 0 4px 0 0 #f2f2f2 inset;
+}
+
+.form button {
+	font-weight: bold;
+	color: #7c5e16;
+	text-transform: uppercase;
+
+	background: #ffd800;
+
+	box-shadow: 0 1px 0 0 #ffe96e inset, 0 4px 0 0 #ffae00;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background: #ffe000;
+}
+

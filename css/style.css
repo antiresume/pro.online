@@ -300,6 +300,14 @@ footer { display: block; }
 	animation:			img6 2s linear infinite;
 }
 
+
+.once {
+	font-size: 35px;
+	padding: 40 100 100 110px;
+	text-align: justify;
+}
+
+
 .form {
 	position: relative;
 	z-index: 20;
@@ -311,12 +319,6 @@ footer { display: block; }
 	margin-top: 46px;
 
 	background: url(../images/elips.png) center bottom no-repeat;
-}
-
-.once {
-	font-size: 35px;
-	padding: 40 100 100 110px;
-	text-align: justify;
 }
 
 
