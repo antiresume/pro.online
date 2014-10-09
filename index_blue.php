@@ -21,7 +21,7 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <div class="container">
 <header>
 <span class="login" href="#">&nbsp</span>
-<div class="header-title">Правильное-резюме.онлайн</div>
+<div class="header-title"><a href="/">Правильное-резюме.онлайн</a></div>
 <div class="header-subtitle">Ваше преимущество при поиске работы!</div>
 </header>
 <div class="content clearfix">
@@ -97,8 +97,6 @@ $APPLICATION->SetTitle("Правильное-резюме.онлайн");
 <?}?>
 <div class="copy"><br><br><br><br><a href="/privacy.php" class="copy">Соглашение об обработке персональной информации</a></div>
 </footer>
-<div id="donate" class="donate">
-	<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/small.xml?account=41001134880985&quickpay=small&any-card-payment-type=on&button-text=01&button-size=l&button-color=white&targets=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D0%B8&default-sum=690&fio=on&mail=on&phone=on" width="259" height="54"></iframe>
 	
 </div>
 </div>

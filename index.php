@@ -22,17 +22,26 @@
 <script type="text/javascript">
 		$(function() {
 				$('#slider').carouFredSel({
-					auto: false,
+					auto: true,
 					
 					prev: '#prev',
 					next: '#next',
 					mousewheel: false,
 					direction	: "left",
-	
+					
+				   scroll: {
+				        items: 1,
+				        duration: 500,
+				        queue: true,
+				        timeoutDuration: 3000,
+				        easing: "linear",
+				        pauseOnHover: "immediate-resume",
+				        fx: "scroll"
+				    },					
+				    
 					swipe: {
 						onMouse: false,
-						onTouch: false
-					}
+						onTouch: false					}
 				});
 			
 			});
@@ -114,6 +123,10 @@
 				<div class="content">
 					<div class="banner_text">
 						<div class="bt_1">
+
+							Если у вас нет резюме - вы можете сделать его самостоятельно<br>
+							
+<?if(0){?>
 							<span class="red">Оплати прямо сейчас</span> и <br />
 							получи в подарок<br />
 							<span class="red">14 дней консультации!</span>
@@ -123,15 +136,17 @@
 							<div class="t2">Часы</div>
 							<div class="t3">Минуты</div>
 							<div class="t4">Секунды</div>
-						</div>
+<?}?>
+						</div>	
 						<div class="bt_2">
-						Получить больше <span class="green">приглашений</span><br/>
-						на собеседования
-						<div class="price_line">
-							Всего за <div class="price"><?=$sum?></div>
-						</div>
+							Получить больше <span class="green">приглашений</span><br/>
+							на собеседования
+							<div class="price_line">
+								Всего за <div class="price"><?=$sum?></div>
+							</div>
 						
 						</div>
+						<a href="/index_blue.php" class="popup_left">СОЗДАТЬ РЕЗЮМЕ </a>
 						<a class="popup" href="#popup" title="">
 							ИСПРАВИТЬ <span>А</span>ШИ<span>П</span>КИ
 						</a>
@@ -267,6 +282,7 @@
 				</div>
 			</div>
 		</div>
+<?if(0){?>
 		<div id="experts">
 			<div class="content">
 				<div class="exp_title">
@@ -286,6 +302,7 @@
 				</div>
 			</div>
 		</div>
+<?}?>
 		<div class="title">
 			<div class="content">
 				Отзывы наших клиентов

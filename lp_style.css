@@ -67,7 +67,7 @@ HTML
 {
 	background: url(lp_images/banner.jpg) no-repeat center top;
 	height: 540px;
-	padding-top: 176px;
+	padding-top: 250px;
 }
 .banner_text
 {
@@ -80,17 +80,19 @@ HTML
 }
 .bt_1
 {
-	background-color: #FFFFFF;
+	background-color: #DDD;
 	float: left;
 	width: 325px;
 	border-radius: 5px;
-	border-top: 4px solid #EFEFEF;
+	border-top: 4px solid #CFCFCF;
 	font-size: 24px;
 	padding-left: 35px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	height: 219px;
+	height: 135px;
+	/*height: 219px;*/
 	padding-right: 35px;
+	color: #777;
 }
 .bt_1 .red
 {
@@ -119,6 +121,7 @@ HTML
 	border-radius: 5px;
 	font-size: 21px;
 	width: 336px;
+	height: 135px;
 	padding-left: 12px;
 	padding-right: 10px;
 	padding-top: 10px;
@@ -148,7 +151,7 @@ HTML
 	display: inline;
 	margin-top: -12px;
 }
-.popup
+.popup, .popup_left
 {
 	display: block;
 	background-color: #FBD628;
@@ -166,6 +169,16 @@ HTML
 	-moz-box-shadow: 0px 4px 0px 0px rgba(240,160,40,1);
 	box-shadow: 0px 4px rgba(240, 160, 40, 1);
 }
+
+.popup_left{
+	background-color: #BBB;
+	width: 325px;
+	float: left;
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(120,120,120,1);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(120,120,120,1);
+	box-shadow: 0px 4px rgba(120, 120, 120, 1);
+}
+
 .popup:hover
 {
 	background: #F3CC11;
