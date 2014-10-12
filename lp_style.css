@@ -80,17 +80,16 @@ HTML
 }
 .bt_1
 {
-	background-color: #DDD;
+	background-color: #FFF;
 	float: left;
 	width: 325px;
 	border-radius: 5px;
-	border-top: 4px solid #CFCFCF;
+	border-top: 4px solid #EFEFEF;
 	font-size: 24px;
 	padding-left: 35px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	height: 135px;
-	/*height: 219px;*/
+	height: 219px;
 	padding-right: 35px;
 	color: #777;
 }
@@ -595,7 +594,7 @@ HTML
 {
 	background: #5D87AD url(lp_images/oplata2.jpg) no-repeat bottom center;
 	width: 620px;
-	height: 469px;
+	height: 339px;
 	padding: 15px 26px;
 	font-family: "PT Sans Narrow";
 	color: #FFFFFF;
