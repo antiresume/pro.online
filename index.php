@@ -129,7 +129,7 @@
 			</div>	
 			<div class="banner">
 				<div><center>
-					<a href="https://ad.admitad.com/g/bc8d84135751d5bbe86015ae281b7a/" class="button-red">Создать резюме</a>
+					<a href="https://ad.admitad.com/g/bc8d84135751d5bbe86015ae281b7a/" target="_blank" class="button-red">Создать резюме</a>
 					<a href="#send-resume" class="button-yellow">Отправить резюме на проверку</a>
 					<a href="#popup" class="button-green">Оставить отзыв</a>
 					</center>
@@ -383,7 +383,7 @@
 		</div>
 		<div id="who">
 			<div class="content text-usual">		
-					<b>1. Перейти по кнопке <a href="https://ad.admitad.com/g/bc8d84135751d5bbe86015ae281b7a/" class="button-red">Создать резюме</a> на портале job.ru</b><br><br>
+					<b>1. Перейти по кнопке <a href="https://ad.admitad.com/g/bc8d84135751d5bbe86015ae281b7a/" target="_blank" class="button-red">Создать резюме</a> на портале job.ru</b><br><br>
 					<small>мы принимаем только новые резюме и только в формате job.ru </small><br><br>
 					
 					<b>2. Заполнить все поля корректными данными</b> <br>
