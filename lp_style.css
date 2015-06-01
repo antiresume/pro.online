@@ -45,6 +45,16 @@ HTML
 	min-width: 800px;
 	
 }
+
+.text-usual {
+	font-size: 24px;	
+}
+
+.text-usual small{
+	font-style: italic;
+	padding-left: 30px;
+}
+
 #header
 {
 	min-width: 800px;
@@ -56,18 +66,92 @@ HTML
 	font-family: "PT Sans Narrow";
 	height: 90px;
 	padding-top: 16px;
+	line-height: 80%;
 }
-.top SPAN
+.top strong
 {
 	font-family: "PT Sans", Arial;
 	font-weight: bold;
 	font-size: 38px;
 }
+
+.top span {
+	color: rgb(147,147,147);
+	font-size: 80%;
+}
+
 .banner
 {
 	background: url(lp_images/banner.jpg) no-repeat center top;
 	height: 540px;
-	padding-top: 250px;
+	padding-top: 470px;
+}
+
+.banner button {
+	height: 50px;
+	/*Скругленные углы*/
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.button-red {
+	color: rgb(240, 240, 240);
+	font-size: 20px;
+	padding: 20px;
+	text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: rgb(210, 20, 20);
+	background: -moz-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+	background: -webkit-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+	background: -o-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+	background: -ms-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+	background: linear-gradient(0deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+	-webkit-box-shadow: 4px 3px 9px rgba(50, 50, 50, 0.72);
+	-moz-box-shadow:    4px 3px 9px rgba(50, 50, 50, 0.72);
+	box-shadow:         4px 3px 9px rgba(50, 50, 50, 0.72);
+}
+
+.button-yellow {
+	color: rgb(94, 94, 94);
+	font-size: 20px;
+	padding: 20px;
+	text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: rgb(229, 222, 18);
+	background: -moz-linear-gradient(90deg, rgb(229, 222, 18) 30%, rgb(255, 255, 17) 70%);
+	background: -webkit-linear-gradient(90deg, rgb(229, 222, 18) 30%, rgb(255, 255, 17) 70%);
+	background: -o-linear-gradient(90deg, rgb(229, 222, 18) 30%, rgb(255, 255, 17) 70%);
+	background: -ms-linear-gradient(90deg, rgb(229, 222, 18) 30%, rgb(255, 255, 17) 70%);
+	background: linear-gradient(0deg, rgb(229, 222, 18) 30%, rgb(255, 255, 17) 70%);
+	-webkit-box-shadow: 4px 3px 9px rgba(50, 50, 50, 0.72);
+	-moz-box-shadow:    4px 3px 9px rgba(50, 50, 50, 0.72);
+	box-shadow:         4px 3px 9px rgba(50, 50, 50, 0.72);
+}
+
+
+.button-green{
+	color: rgb(28, 28, 28);
+	font-size: 20px;
+	padding: 20px;
+	text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: rgb(44, 214, 25);
+	background: -moz-linear-gradient(90deg, rgb(44, 214, 25) 30%, rgb(67, 255, 20) 70%);
+	background: -webkit-linear-gradient(90deg, rgb(44, 214, 25) 30%, rgb(67, 255, 20) 70%);
+	background: -o-linear-gradient(90deg, rgb(44, 214, 25) 30%, rgb(67, 255, 20) 70%);
+	background: -ms-linear-gradient(90deg, rgb(44, 214, 25) 30%, rgb(67, 255, 20) 70%);
+	background: linear-gradient(0deg, rgb(44, 214, 25) 30%, rgb(67, 255, 20) 70%);
+	-webkit-box-shadow: 4px 3px 9px rgba(50, 50, 50, 0.72);
+	-moz-box-shadow:    4px 3px 9px rgba(50, 50, 50, 0.72);
+	box-shadow:         4px 3px 9px rgba(50, 50, 50, 0.72);
+
 }
 .banner_text
 {
@@ -324,11 +408,11 @@ HTML
 {
 	float: right;
 	line-height: 1.5;
-	word-break: break-all;
+	word-break: break-word;
 	width: 73%;
 }
 
-.voprosu_text span{
+.voprosu_text span, .voprosu_text strong{
 	font-weight: bold;
 	
 }
@@ -406,6 +490,7 @@ HTML
 	width: 53%;
 	position: absolute;
 	max-height: 603px;
+	min-height: 375px;
 	height: 375px;
 	bottom: 0px;
 }
@@ -422,11 +507,18 @@ HTML
 	font-size: 18px;
 	float: right;
 	width: 44%;
+	height: 270px;
+}
+
+.who_text strong {
+	font-weight: bold;
+	
 }
 .name_man
 {
 	font-weight: bold;
 	font-size: 36px;
+	line-height: 120%;
 }
 .name_man SPAN
 {
@@ -592,14 +684,17 @@ HTML
 }
 #popup
 {
-	background: #5D87AD url(lp_images/oplata2.jpg) no-repeat bottom center;
-	width: 620px;
-	height: 339px;
+	background: #6bae5f;
+	width: 560px;
+	height: 280px;
 	padding: 15px 26px;
 	font-family: "PT Sans Narrow";
 	color: #FFFFFF;
 	font-size: 24px;
 	display: none;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 .popup_title
 {
@@ -609,6 +704,8 @@ HTML
 	color: #E4E4E4;
 	font-weight: bold;
 }
+
+
 .cena
 {
 	background: url(lp_images/cena.png) repeat;
@@ -654,6 +751,9 @@ text-decoration: none;
 	background-color: #FFFFFF;
 	padding: 20px;
 	display: none;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 
 .sogl
@@ -664,6 +764,33 @@ text-decoration: none;
 
 }
 
+#send-resume
+{
+	width: 520px;
+	background-color: #cbbf4d;
+	padding: 20px;
+	display: none;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.send-resume
+{
+	font-family: "PT Sans Narrow";
+	font-size: 21px;
+	color: #111111;
+
+}
+
+.send-resume-title {
+	font-family: "PT Sans Narrow";
+	font-size: 34px;
+	font-weight: bold;
+	text-align: left;
+	color: #111111;
+	padding-left: 20px;
+}
 .countdownHolder
 {
 	width: 450px;
@@ -786,8 +913,8 @@ text-decoration: none;
 	margin: 0 auto;
 
 	width: 366px;
-	height: 305px;
-	margin-top: 46px;
+	height: 205px;
+	margin-top: 26px;
 
 	background: url(../images/elips.png) center bottom no-repeat;
 }
@@ -797,7 +924,7 @@ text-decoration: none;
 .form form {
 	width: 340px;
 	height: 255px;
-	padding: 10px;
+	padding: 	0px;
 	
 
 	background: #ff7d54;
@@ -821,7 +948,7 @@ text-decoration: none;
 
 .form input,
 .form button {
-	width: 320px;
+	width: 400px;
 	height: 60px;
 	margin: 10px 0 6px 0;
 	padding: 15px 15px;
