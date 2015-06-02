@@ -307,6 +307,12 @@ HTML
 	width: 33%;
 	text-align: left;
 }
+
+#promo {
+	background-color: #df4324;
+	color: #f2f688
+}
+
 .chislo
 {
 	float: left;

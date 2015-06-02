@@ -125,6 +125,7 @@
             }
             
         </script>   
+		<div id="promo" class="center">Акция: 500 рублей каждому, кто получит работу на нашем сервисе!</div>
 		<div id="header">
 			<div class="top">
 				<div class="content">
@@ -134,7 +135,7 @@
 			</div>	
 			<div class="banner">
 				<div><center>
-					<a href="#create-resume" onclick="CreateResume(); return false;" class="button-red">Создать резюме</a>
+					<a href="#create-resume" onclick="CreateResume(); return false;" class="button-red">Создать резюме на JOB.ru</a>
 					<a href="#send-resume" class="button-yellow">Отправить резюме на проверку</a>
 					<a href="#popup" class="button-green">Оставить отзыв</a>
 					</center>
